@@ -12,3 +12,4 @@ sources:
       - name: raw_employee
       - name: raw_office
       - name: raw_shipments
+      - name: raw_suppliers
