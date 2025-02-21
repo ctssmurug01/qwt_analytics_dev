@@ -16,7 +16,7 @@ def avgordervalue(nooforders, totalvalue):
  
 def model(dbt, session):
  
-    dbt.config(materialized = 'table', schema = 'reporting_dev', packages = ['holidays'])
+    dbt.config(materialized = 'table', schema = 'reporting_dev', packages = ['holidays'], pre_hook = 'use warehouse hook_dwh')
     orders_df = dbt.ref('fct_orders')
  
     orders_agg_df = (
