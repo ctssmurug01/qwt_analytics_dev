@@ -3,7 +3,7 @@
     {% set get_max_orderdate_query %}
  
         SELECT max(orderdate)
-        from {{ref('fct_orders')}}
+        from {{ref('stg_orders')}}
      
     {% endset %}
  
