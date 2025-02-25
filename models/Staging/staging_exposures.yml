@@ -1,0 +1,17 @@
+version: 2
+
+exposures:
+
+  - name: rpt_company_performance_by_sales
+    type: dashboard
+    maturity: high
+    url: https://www.google.com
+    description: "Sales by company performance"
+
+    depends_on:
+      - ref('fct_orders')
+      - ref('dim_employees')
+
+    owner:
+      name: david
+      email: david@qwt.com
