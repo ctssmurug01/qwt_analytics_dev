@@ -3,7 +3,7 @@
     {% set get_min_orderdate_query %}
  
         SELECT min(orderdate)
-        from {{ref('fct_orders')}}
+        from {{ref('stg_orders')}}
      
     {% endset %}
  
